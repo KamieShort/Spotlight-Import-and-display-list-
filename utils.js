@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { animals } from './animals.js';
 
 export function renderAnimals(animals) {
