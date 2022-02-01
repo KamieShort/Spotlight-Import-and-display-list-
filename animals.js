@@ -1,32 +1,33 @@
 export const animals = [
     {
-    type: 'dog',
-    numberOfLegs: 4,
-    class: 'mammals',
-    cuteness: 10,
-    image: 
-}
+        type: 'dog',
+        numberOfLegs: 4,
+        class: 'mammals',
+        cuteness: 100,
+        img: 'dog.jpg',
+    },
 
-{
-    type: 'pig',
-    numberOfLegs: 4,
-    class: 'mammals',
-    cuteness: 12,
-    image: 
-}
+    {
+        type: 'pig',
+        numberOfLegs: 4,
+        class: 'mammals',
+        cuteness: 10,
+        img: 'pig.jpg',
+    },
 
-{
-    type: 'orca',
-    numberOfLegs: 4,
-    class: 'mammals',
-    cuteness: 2,
-    image: 
-}
+    {
+        type: 'cat',
+        numberOfLegs: 4,
+        class: 'mammals',
+        cuteness: 10,
+        img: 'cat.jpg',
+    },
 
-{
-    type: 'wombat',
-    numberOfLegs: 2,
-    class: 'mammals',
-    cuteness: 10,
-    image: 
-}]
+    {
+        type: 'chicken',
+        numberOfLegs: 2,
+        class: 'mammals',
+        cuteness: 7,
+        img: 'chicken.jpg',
+    },
+];

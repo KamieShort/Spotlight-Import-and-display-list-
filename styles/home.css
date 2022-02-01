@@ -1,1 +1,18 @@
-/* add home page styles here */
+.animals {
+    display: flex;
+}
+#animals-list {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.animals img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
