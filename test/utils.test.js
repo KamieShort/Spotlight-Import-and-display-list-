@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { foods } from '../foods.js';
-import { renderAnimals } from '../utils.js';
+import { renderAnimals, renderFoods } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -18,12 +17,10 @@ test('renderAnimals should return a <div> with animal info', (expect) => {
     expect.equal(actual.outerHTML, expected);
 });
 
-import { renderFoods } from './utils.js';
-
 test('renderFoods should return an array with food items', (expect) => {
-    const expected = ['pizza', 'sushi', 'steak'];
+    const expected = 'pizza';
 
     const actual = renderFoods('pizza', 'sushi', 'steak');
 
-    expect.deepEqual(actual, expected);
+    expect.deepEqual(actual.innerText, expected);
 });
