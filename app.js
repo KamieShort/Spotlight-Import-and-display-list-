@@ -9,7 +9,12 @@ for (let animal of animals) {
     animalList.append(div);
 }
 
-// set event listeners
-// get user input
-// use user input to update state
-// update DOM to reflect the new state
+import { foods } from './foods.js';
+import { renderFoods } from './utils.js';
+
+const foodList = document.getElementById('foods-list');
+
+for (let food of foods) {
+    const li = renderFoods(food);
+    foodList.append(li);
+}

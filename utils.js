@@ -16,3 +16,11 @@ export function renderAnimals(animals) {
     div.append(h2, img, p);
     return div;
 }
+
+import { foods } from './foods.js';
+
+export function renderFoods(food) {
+    const li = document.createElement('li');
+    li.innerText = food;
+    return li;
+}
