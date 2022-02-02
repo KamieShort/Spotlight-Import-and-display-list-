@@ -39,10 +39,10 @@ test('renderHouses should return a nested object with data sales info', (expect)
     expect.equal(actual.outerHTML, expected);
 });
 
-test('renderCookies should return an array with ingredient items', (expect) => {
-    const expected = ['butter'];
+// test('renderCookies should return an array with ingredient items', (expect) => {
+//     const expected = ['butter'];
 
-    const actual = renderCookies('butter');
+//     const actual = renderCookies('butter');
 
-    expect.equal(actual.outerHTML, expected);
-});
+//     expect.equal(actual.outerHTML, expected);
+// });
