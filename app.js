@@ -1,4 +1,6 @@
 import { animals } from './animals.js';
+import { foods } from './foods.js';
+import { houses } from './houses.js';
 import { renderAnimals, renderFoods, renderHouses } from './utils.js';
 
 // let state
@@ -9,11 +11,16 @@ for (let animal of animals) {
     animalList.append(div);
 }
 
-import { foods } from './foods.js';
-
 const foodList = document.getElementById('foods-list');
 
 for (let food of foods) {
     const li = renderFoods(food);
     foodList.append(li);
+}
+
+const houseList = document.getElementById('house-list');
+
+for (let salesData of houses) {
+    const div = renderHouses(salesData);
+    houseList.append(div);
 }

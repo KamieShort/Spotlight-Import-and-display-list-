@@ -1,3 +1,4 @@
+// simple objects
 export const animals = [
     {
         type: 'dog',

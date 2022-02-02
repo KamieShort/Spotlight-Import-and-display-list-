@@ -16,3 +16,19 @@
     border: 10px;
     padding: 10px;
 }
+
+.houses img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
+
+#house-list {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}

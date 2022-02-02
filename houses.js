@@ -1,22 +1,30 @@
+// nested object
+
 export const houses = [
-{
-    type: 'stick',
-    color: 'blue',
-    price: '100k'
-    img: 'bluestick.jpg',
-},
+    {
+        type: 'Stick Built',
+        salesData: {
+            color: 'blue',
+            price: '$300,000',
+        },
+        img: 'bluestick.jpg',
+    },
 
-{
-    type: 'brick',
-    color: 'red',
-    price: '200k'
-    img: 'redbrick.jpg',
-},
+    {
+        type: 'Brick',
+        salesData: {
+            color: 'red',
+            price: '$' + '400,000',
+        },
+        img: 'redbrick.jpg',
+    },
 
-{
-    type: 'cabin',
-    color: 'brown',
-    price: '300k'
-    img: 'cabin.jpg',
-},
-]
+    {
+        type: 'Cabin',
+        salesData: {
+            color: 'brown',
+            price: 200000,
+        },
+        img: 'cabin.jpg',
+    },
+];

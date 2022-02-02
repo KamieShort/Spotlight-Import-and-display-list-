@@ -21,24 +21,24 @@ import { foods } from './foods.js';
 
 export function renderFoods(food) {
     const li = document.createElement('li');
-    li.innerText = food;
+    li.textContent = food;
     return li;
 }
 
-import { houses } from './houses';
+import { houses } from './houses.js';
 
-export function renderHouses(house) {
+export function renderHouses(houses) {
     const div = document.createElement('div');
-    div.classList.add('house');
+    div.classList.add('houses');
 
     const h2 = document.createElement('h2');
-    h2.textContent = house.type;
+    h2.textContent = houses.type;
 
     const img = document.createElement('img');
-    img.src = `./assets/${house.img}`;
+    img.src = `./assets/${houses.img}`;
 
     const p = document.createElement('p');
-    p.textContent = `${house.type} are ${house.color} colored and have a price of ${house.price}.`;
+    p.textContent = `${houses.type} homes are colored ${houses.color} and have a price of ${houses.price}.`;
     div.append(h2, img, p);
     return div;
 }
