@@ -26,7 +26,7 @@ test('renderFoods should return a <li> with food item', (expect) => {
 });
 
 test('renderHouses should return a nested object with data sales info', (expect) => {
-    const expected = `<div class="houses"><h2>Stick Built</h2><img src="./assets/bluestick.jpg"><p>Stick Built homes are colored and have a price of.</p></div>`;
+    const expected = `<div class="houses salesData"><h2>Stick Built</h2><img src="./assets/bluestick.jpg"><p>Stick Built homes are colored blue and have a price of $300,000.</p></div>`;
 
     const actual = renderHouses({
         type: 'Stick Built',

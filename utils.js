@@ -30,6 +30,7 @@ import { houses } from './houses.js';
 export function renderHouses(houses) {
     const div = document.createElement('div');
     div.classList.add('houses');
+    div.classList.add('salesData');
 
     const h2 = document.createElement('h2');
     h2.textContent = houses.type;
@@ -38,7 +39,7 @@ export function renderHouses(houses) {
     img.src = `./assets/${houses.img}`;
 
     const p = document.createElement('p');
-    p.textContent = `${houses.type} homes are colored ${houses.color} and have a price of ${houses.price}.`;
+    p.textContent = `${houses.type} homes are colored ${houses.salesData.color} and have a price of ${houses.salesData.price}.`;
     div.append(h2, img, p);
     return div;
 }

@@ -20,7 +20,11 @@ for (let food of foods) {
 
 const houseList = document.getElementById('house-list');
 
-for (let salesData of houses) {
-    const div = renderHouses(salesData);
+for (let house of houses) {
+    const div = renderHouses(house);
     houseList.append(div);
 }
+// for (let salesData of houses) {
+//     const div = renderHouses(salesData);
+//     houseList.append(div);
+// }

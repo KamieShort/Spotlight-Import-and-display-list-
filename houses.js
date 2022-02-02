@@ -14,7 +14,7 @@ export const houses = [
         type: 'Brick',
         salesData: {
             color: 'red',
-            price: '$' + '400,000',
+            price: '$400,000',
         },
         img: 'redbrick.jpg',
     },
@@ -23,7 +23,7 @@ export const houses = [
         type: 'Cabin',
         salesData: {
             color: 'brown',
-            price: 200000,
+            price: '$200,000',
         },
         img: 'cabin.jpg',
     },
