@@ -24,3 +24,21 @@ export function renderFoods(food) {
     li.innerText = food;
     return li;
 }
+
+import { houses } from './houses';
+
+export function renderHouses(house) {
+    const div = document.createElement('div');
+    div.classList.add('house');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = house.type;
+
+    const img = document.createElement('img');
+    img.src = `./assets/${house.img}`;
+
+    const p = document.createElement('p');
+    p.textContent = `${house.type} are ${house.color} colored and have a price of ${house.price}.`;
+    div.append(h2, img, p);
+    return div;
+}
