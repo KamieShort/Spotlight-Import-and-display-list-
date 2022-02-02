@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { renderAnimals, renderFoods, renderHouses } from '../utils.js';
+import { renderAnimals, renderFoods, renderHouses, renderCookies } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -36,5 +36,13 @@ test('renderHouses should return a nested object with data sales info', (expect)
         },
         img: 'bluestick.jpg',
     });
+    expect.equal(actual.outerHTML, expected);
+});
+
+test('renderCookies should return an array with ingredient items', (expect) => {
+    const expected = ['butter'];
+
+    const actual = renderCookies('butter');
+
     expect.equal(actual.outerHTML, expected);
 });

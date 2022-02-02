@@ -1,7 +1,9 @@
 import { animals } from './animals.js';
 import { foods } from './foods.js';
 import { houses } from './houses.js';
-import { renderAnimals, renderFoods, renderHouses } from './utils.js';
+import { cookies } from './cookies.js';
+
+import { renderAnimals, renderFoods, renderHouses, renderCookies } from './utils.js';
 
 // let state
 const animalList = document.getElementById('animals-list');
@@ -24,7 +26,10 @@ for (let house of houses) {
     const div = renderHouses(house);
     houseList.append(div);
 }
-// for (let salesData of houses) {
-//     const div = renderHouses(salesData);
-//     houseList.append(div);
-// }
+
+const cookieList = document.getElementById('cookie-list');
+
+for (let cookie of cookies) {
+    const array = renderCookies(cookie);
+    cookieList.append(array);
+}

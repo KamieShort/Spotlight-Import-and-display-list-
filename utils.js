@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { animals } from './animals.js';
+import { foods } from './foods.js';
+import { houses } from './houses.js';
+import { cookies } from './cookies.js';
 
 export function renderAnimals(animals) {
     const div = document.createElement('div');
@@ -17,15 +20,11 @@ export function renderAnimals(animals) {
     return div;
 }
 
-import { foods } from './foods.js';
-
 export function renderFoods(food) {
     const li = document.createElement('li');
     li.textContent = food;
     return li;
 }
-
-import { houses } from './houses.js';
 
 export function renderHouses(houses) {
     const div = document.createElement('div');
@@ -42,4 +41,14 @@ export function renderHouses(houses) {
     p.textContent = `${houses.type} homes are colored ${houses.salesData.color} and have a price of ${houses.salesData.price}.`;
     div.append(h2, img, p);
     return div;
+}
+
+// export function renderCookies(cookie) {
+//     const array = document.createElement('array');
+//     array.textContent = cookie;
+//     return array;
+// }
+
+export function renderCookies(cookie) {
+    return ['butter', 'sugar', 'vanilla', 'chocolate chips', 'egg', 'flour'];
 }
